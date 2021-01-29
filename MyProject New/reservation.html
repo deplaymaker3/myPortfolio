@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Reservation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <style>
+            body {
+                background-color: rgb(231, 225, 231);
+            }
+           
+            .menu-bar {
+                position: absolute;
+                left: 63%;
+                top: 30px;
+            }
+
+            .name {
+                position: absolute;
+                right: 70%;
+                top: 19px;                             
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+                
+               
+            }
+            .border {
+                position: absolute;
+                border-style: none !important; 
+                
+                padding-left: 100px;
+                padding-right: 1295px;
+                padding-bottom: 3px;
+                padding-top: 100px;
+                background-color: rgb(23, 24, 24);
+                opacity: 0.5;   
+            }
+            .motto {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                position: absolute;
+                left: 63%;
+                top: 280px;
+                color: white;
+                text-shadow: 1px 1px 6px #f7f5f5;
+                font-size: 60px;
+                text-align: center;
+            }
+            .sub-motto {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                position: absolute;
+                left: 67%;
+                top: 367px;
+                color: white;
+                
+                
+                text-align: center;
+
+            }
+           
+            a {
+                text-decoration: none;
+            }
+
+
+            .fa {
+                padding: 10px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                
+                }
+
+            .fa:hover {
+                opacity: 0.9;
+            }
+
+            .fa-instagram {
+                background: #9fa2a3;
+                color: white;
+                border-radius: 20%;
+                }
+
+             .fa-facebook {
+                background: #9fa2a3;
+                color: white;
+                border-radius: 20%;
+                }
+
+            .fa-twitter {
+                background: #9fa2a3;
+                color: white;
+                border-radius: 20%;
+                }
+            
+            .fa-linkedin {
+                background: #9fa2a3;
+                color: white;
+                border-radius: 20%;
+                }
+
+             .fa-youtube {
+                background: #9fa2a3;
+                color: white;
+                border-radius: 20%;
+                }
+
+
+           
+
+            .footer {
+    
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: rgb(34, 32, 27);
+                color: rgb(250, 245, 250);
+                opacity: 1;
+                padding: 20px;
+            }
+
+            .write-up {
+                border: 1px solid black;
+                padding: 15px;
+                box-shadow: 30px 30px 40px rgb(51, 52, 53);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                
+
+            }
+
+           
+           
+           
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="border">
+                
+            </div>
+            <div class="name">
+                <a href="index.html">
+                    <h1 style="color: rgb(252, 252, 247); text-shadow: 2px 2px 6px #f7f5f5;">
+                        DownTown Lounge
+
+                    </h1>
+                </a>
+            </div>
+            <div class="menu-bar">
+                
+            <a class="btn btn-outline-light" style="background-color:none;border-color:rgb(56, 58, 56)" href="menu.html" role="button">MENU</a>
+            <a class="btn btn-outline-light" style="background-color:none;border-color:rgb(56, 58, 56)" href="reservation.html" role="button">RESERVATIONS</a>
+            <a class="btn btn-outline-light" style="background-color:none;border-color:rgb(56, 58, 56)" href="about.html" role="button">ABOUT US</a>
+            <a class="btn btn-outline-light" style="background-color:none;border-color:rgb(56, 58, 56)" href="location.html" role="button">LOCATIONS</a>
+
+            </div>
+            <img width="100%" src="resources/img/bar3.jpg">
+
+            <div>
+            <h1 class="motto">
+                RESERVATIONS
+            </h1>
+
+            <h6 class="sub-motto">
+               <small> We accept a limited number of reservations up to one
+                <br>month in advance for parties of up to ten guests.
+            </small>
+                
+                </h6>
+            </div>
+            
+
+         </div>
+        </div>
+        
+
+
+        <div class="container-fluid">
+            <div class="write-up">
+                <h1 style="text-align: center; font-family: 'Yellowtail', cursive; font-size: 50px;"> 
+                   Make A Reservation
+
+                </h1> <br>
+
+               
+               
+                <form>
+                <p style="text-align: center; font-family: 'Redressed' cursive">
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" > <br> <br>
+
+                    <label for="time">Time:</label><br>
+                    <input type="time" id="time" > <br><br> 
+
+                    <label for="person">Number of Person(s):</label><br>
+                    <input type="number" value="1" id="person" min="1" max="10" size="3"><br><br>
+
+                    <a class="btn btn-outline-dark" 
+                    style="background-color:none;border-color:rgb(56, 58, 56)" href="reserve.co " target="blank" role="button">FIND A TABLE</a>
+
+            </p>
+        </form>
+    
+
+            
+            <p style="text-align: center;"> 
+                Prefer to make your reservation via phone? <br>
+                Call:<br>
+                0 (212) 422 20 82<br>
+                0 (212) 432 00 22<br>
+                0 (212) 401 49 67<br>
+
+                between 10am and noon
+            </p>
+            </div>
+
+        </div>
+        <br><br><br><br>
+
+
+
+        <div class="container-fluid">
+            <div class="footer">
+
+                <div class="icons" style="text-align: center;"> 
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <br>
+
+
+
+
+                <div class="row" style="text-align: center;">
+                    <div class="col-lg-12"><h3 style="font-family: fantasy;">LOCATIONS</h3></div> <br><br><br>
+                        
+                </div>
+
+                <div class="row" style="text-align: center;">
+                <div class="col-lg-3"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Istanbul</h4><br>
+                
+                <address>
+                    Gokevler Mahallesi<br> 
+                    532 (2389) No:5 <br>
+                    Besiktas<br>
+                    Istanbul<br>
+                    Turkey <br>
+                    0 (212) 422 20 82
+                    </address>
+
+                </div>
+
+                    <div class="col-lg-3"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Izmir</h4><br>
+                    <address>
+                        Incirtepe Mahallesi<br> 
+                        432 (2389) No:7A <br>
+                        Yenikent<br>
+                        Izmir<br>
+                        Turkey <br>
+                        0 (212) 432 00 22
+                        </address>
+                    </div>
+
+                    <div class="col-lg-3"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Antalya</h4><br>
+                        <address>
+                            Florya Caddesi<br> 
+                            414 (2311) No:14G <br>
+                            Akseki<br>
+                            Antalya<br>
+                            Turkey <br>
+                            0 (212) 401 49 67
+                            </address>
+                        </div>
+
+                        <div class="col-lg-3"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Work Hours</h4><br>
+                            <address>
+                                Monday - Sunday<br>
+                                11:30am — 10pm <br>
+                                </address>
+                            </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="copyright" style="text-align: center; color: rgb(129, 128, 128);">
+                    <small>&copy; 2021 DownTown Lounge / All Rights Reserved</small>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+        
+    </body>
+</htm>
